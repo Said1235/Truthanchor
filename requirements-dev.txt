@@ -1,0 +1,8 @@
+# Generation A: runner py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6 (GenVM v0.2.16)
+genvm-linter==0.11.0
+genlayer-test==0.29.2      # 0.30.0rc2 cannot load generation-A contracts (playbook 5.3)
+cloudpickle==3.1.2         # needed so Direct Mode's check_pickling really runs
+pytest==9.2.0
+# One-time bundle download (tests/direct/conftest.py copies it into genlayer-test's cache):
+#   genvm-lint download -v v0.2.16
+# Always lint with:  export GENVM_VERSION=v0.2.16
