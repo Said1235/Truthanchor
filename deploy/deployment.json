@@ -1,0 +1,47 @@
+{
+  "name": "TruthAnchor",
+  "contract_path": "contracts/truth_anchor.py",
+  "contract_sha256": "50fd280f9444069f4b19017da0f2482629c9a1f853e027c45bd5d341c67fc157",
+  "header": [
+    "# v0.2.16",
+    "# { \"Depends\": \"py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6\" }"
+  ],
+  "runner": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+  "genvm_bundle": "v0.2.16",
+  "criteria_version": 2,
+  "constructor": {
+    "signature": "__init__(self)",
+    "params": [],
+    "args_file": "deploy/constructor_args.json"
+  },
+  "abi": {
+    "path": "abi.json",
+    "sha256": "a09606d9d9156868206e50a77f3a041fc0ac7799ad2c2d6b2fa70101edbaef14"
+  },
+  "methods": [
+    "get_event",
+    "get_event_count",
+    "get_event_status",
+    "get_limits",
+    "list_event_ids",
+    "register_event",
+    "resolve_event"
+  ],
+  "network": {
+    "default": "localnet",
+    "allowed": [
+      "localnet",
+      "studionet",
+      "testnet-asimov",
+      "testnet-bradbury"
+    ],
+    "set_command": "genlayer network set <network>",
+    "note": "The default is the local simulator. Any other network must be chosen explicitly with NETWORK=<name> and needs a funded account."
+  },
+  "cli": {
+    "name": "genlayer",
+    "verified_version": "0.39.2",
+    "deploy_command": "genlayer deploy --contract <contract_path> [--args <constructor args>]"
+  },
+  "live_deployment_performed": false
+}
