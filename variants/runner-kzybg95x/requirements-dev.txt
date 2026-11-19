@@ -1,7 +1,0 @@
-# Versions used to lint/test (SDK generation B, runner py-genlayer:kzybg95x1gn21dw72m7hyg0maaap04n4nx55j9yt6fkdqxtz6bz0)
-genvm-linter @ git+https://github.com/genlayerlabs/genvm-linter@main    # reported version: 0.11.1rc2
-genlayer-test==0.30.0rc2
-genlayer-py==0.19.0rc3
-cloudpickle==3.1.2     # needed for Direct Mode's check_pickling to actually run
-pytest==9.2.0
-# GenVM bundle (genvm-manager): v0.6.0-rc15 -> export GENVM_VERSION=v0.6.0-rc15  (tests/direct/conftest.py sets it)
